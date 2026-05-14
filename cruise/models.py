@@ -3,6 +3,7 @@ from django.db import models
 # Data and Information about Cruise
 class Cruise(models.Model):
     number = models.IntegerField(null=True, verbose_name="Nro. del Crucero")
+    preview = models.CharField(max_length=10000, verbose_name="Preview del Crucero")
     description = models.TextField(verbose_name="Descripcion del Crucero")
     rooms = models.IntegerField(null=False, verbose_name="Nro. de Habitaciones")
     availability = models.CharField(max_length=20, null=False, verbose_name="Estado del Crucero")

@@ -1,0 +1,7 @@
+<h2> ELIMINAR CRUCERO {{ cruise.number }} </h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit"> ELIMINAR CRUCERO </button>
+</form>

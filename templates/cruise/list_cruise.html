@@ -1,0 +1,13 @@
+<h2> CRUCEROS DISPONIBLES </h2>
+
+{% for cruise in cruises %}
+
+    <article>
+        <h3> {{ cruise.number }} </h3>
+        <p> {{ cruise.preview }} </p>
+        <p> Estado: {{ cruise.availability }} </p>
+        <p> Precio: {{ cruise.price }} </h3>
+        <button> <a href="{% url 'cruise:cruise_detail' cruise.pk %}"> VER DETALLES </a> </button>
+    </article>
+
+{% endfor %}

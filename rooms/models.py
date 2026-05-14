@@ -5,6 +5,7 @@ from cruise.models import Cruise
 class Room(models.Model):
     cruise = models.ForeignKey(Cruise, on_delete=models.CASCADE, verbose_name="Crucero de la Habitacion")
     number = models.IntegerField(verbose_name="Nro. de la Habitacion")
+    preview = models.CharField(max_length=10000, verbose_name="Preview de la Habitacion")
     description = models.TextField(verbose_name="Descripcion de la Habitacion")
     bedrooms = models.IntegerField(verbose_name="Nro. de Dormitorios")
     bathroom = models.CharField(max_length=10, verbose_name="Nro. de Baños")
