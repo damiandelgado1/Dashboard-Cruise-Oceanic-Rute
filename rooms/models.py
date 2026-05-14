@@ -14,3 +14,7 @@ class Room(models.Model):
 
     def __str__(self):
         return f"Habitacion {self.number}: {self.availability}"
+
+    class Meta:
+        verbose_name = "room"
+        verbose_name_plural = "rooms"
