@@ -3,7 +3,7 @@ from django.urls import path
 from .views import ListRoom, DetailRoom, CreateRoom, ModifyRoom, DeleteRoom
 
 
-app_name = "rooms"
+app_name = "room"
 
 urlpatterns = [
     path('list/', ListRoom.as_view(), name="room_list"),

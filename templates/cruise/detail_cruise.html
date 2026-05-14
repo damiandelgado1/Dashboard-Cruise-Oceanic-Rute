@@ -1,17 +1,13 @@
-{% block cruise %}
+<nav>
+    <a href="{% url 'home' %}"> VOLVER AL INICIO </a>
+</nav>
 
-    <nav>
-        <button> <a href="{% url 'home' %}"> VOLVER AL INICIO </a> </button>
-    </nav>
-
-    <section>
-        <h3> CRUCERO {{ cruise.number }} - DESCRIPCION </h3>
-        <p> {{ cruise.description }} </p>
-        <p> Nro. de Habitaciones: {{ cruise.rooms }} </p>
-        <p> Estado del Crucero {{ cruise.availability }} </p>
-        <p> Precio: {{ cruise.price }} </h3>
-        <button> <a href="{% url 'cruise:modify_cruise' cruise.pk %}"> MODIFICAR CRUCERO </a> </button>
-        <button> <a href="{% url 'cruise:delete_cruise' cruise.pk %}"> ELIMINAR CRUCERO </a> </button>
-    </section>
-
-{% endblock %}
+<section>
+    <h3> CRUCERO {{ cruise.number }} - DESCRIPCION </h3>
+    <p> {{ cruise.description }} </p>
+    <p> Nro. de Habitaciones: {{ cruise.rooms }} </p>
+    <p> Estado del Crucero {{ cruise.availability }} </p>
+    <p> Precio: {{ cruise.price }} </p>
+    <button> <a href="{% url 'cruise:modify_cruise' cruise.pk %}"> MODIFICAR CRUCERO </a> </button> <br> 
+    <button> <a href="{% url 'cruise:delete_cruise' cruise.pk %}"> ELIMINAR CRUCERO </a> </button>
+</section>

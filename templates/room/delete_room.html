@@ -1,0 +1,7 @@
+<h3> ELIMINAR HABITACION {{ room.number }} </h3>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit"> ELIMINAR HABITACION </button>
+</form>

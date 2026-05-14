@@ -47,4 +47,4 @@ class ModifyCruise(UpdateView):
 class DeleteCruise(DeleteView):
     model = Cruise
     template_name = "cruise/delete_cruise.html"
-    success_url = redirect("home")
+    success_url = reverse_lazy("home")
