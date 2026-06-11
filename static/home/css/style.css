@@ -154,3 +154,28 @@ cruise/create_cruise.html
     margin-left: 95px;
     padding: 8px;
 }
+
+/* ==================================================
+cruise/modify_cruise.html
+================================================== */
+
+.modify-cruise {
+font-size: 30px;
+text-align: center;
+}
+
+.cruise-modify {
+margin-left: 575px;
+}
+
+.modify {
+background-color: #003CC4;
+border: none;
+border-radius: 4px;
+color: white;
+font-family: Barlow Condensed;
+font-size: 18px;
+margin-left: 20px;
+padding: 8px;
+width: 150px;
+}
