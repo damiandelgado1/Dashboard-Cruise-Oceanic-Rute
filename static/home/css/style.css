@@ -179,3 +179,23 @@ margin-left: 20px;
 padding: 8px;
 width: 150px;
 }
+
+/* ==================================================
+cruise/delete_cruise.html
+================================================== */
+
+.delete-cruise {
+    font-size: 25px;
+    text-align: center;
+}
+
+.cruise-delete {
+    background-color: #003CC4;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-family: Barlow Condensed;
+    font-size: 18px;
+    margin-left: 610px;
+    padding: 6px;
+}
