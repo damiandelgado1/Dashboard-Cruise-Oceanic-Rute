@@ -2,6 +2,54 @@
 
 <form method="POST">
     {% csrf_token %}
-    {{ form.as_p }}
+
+    <div>
+        <label for="{{ form.cruise.id_for_label }}"> NRO. DEL CRUCERO </label> <br>
+        {{ form.cruise }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.number.id_for_label }}"> NRO. DE LA HABITACION </label> <br>
+        {{ form.number }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.description.id_for_label }}"> DESCRIPCION DE LA HABITACION </label> <br>
+        {{ form.description }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.bedrooms.id_for_label }}"> DORMITORIOS </label> <br>
+        {{ form.bedrooms }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.bathroom.id_for_label }}"> BAÑOS </label> <br>
+        {{ form.bathroom }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.dining_room.id_for_label }}"> COMEDOR </label> <br>
+        {{ form.dining_room }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.availability.id_for_label }}"> DISPONIBILIDAD </label> <br>
+        {{ form.availability }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.price.id_for_label }}"> PRECIO DEL CRUCERO </label> <br>
+        {{ form.price }}
+    </div>
+    <br>
+
     <button type="submit"> CREAR HABITACION </button>
 </form>

@@ -2,6 +2,48 @@
 
 <form method="POST">
     {% csrf_token %}
-    {{ form.as_p }}
+
+    <div>
+        <label for="{{ form.number.id_for_label }}"> NRO. DEL CRUCERO </label> <br>
+        {{ form.number }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.photo.id_for_label }}"> FOTO DEL CRUCERO </label> <br>
+        {{ form.photo }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.preview.id_for_label }}"> PREVIEW </label> <br>
+        {{ form.preview }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.description.id_for_label }}"> DESCRIPCION DEL CRUCERO </label> <br>
+        {{ form.description }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.rooms.id_for_label }}"> NRO. DE HABITACIONES </label> <br>
+        {{ form.rooms }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.availability.id_for_label }}"> DISPONIBILIDAD DEL CRUCERO </label> <br>
+        {{ form.availability }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.price.id_for_label }}"> PRECIO DEL CRUCERO </label> <br>
+        {{ form.price }}
+    </div>
+    <br>
+
     <button type="submit"> CREAR CRUCERO </button>
 </form>

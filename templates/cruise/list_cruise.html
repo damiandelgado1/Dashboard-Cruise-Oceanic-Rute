@@ -1,15 +1,15 @@
-<h2> CRUCEROS DISPONIBLES </h2>
+<section>
 
-<a href="{% url 'cruise:create_cruise' %}"> CREAR CRUCERO </a>
+    {% for cruise in cruises %}
 
-{% for cruise in cruises %}
+        <article>
+            <h3> CRUCERO {{ cruise.number }} </h3>
+            <p> {{ cruise.preview }} </p>
+            <p> Estado: {{ cruise.availability }} </p>
+            <p> Precio: {{ cruise.price }} </p> <br>
+            <button> <a href="{% url 'cruise:cruise_detail' cruise.pk %}"> VER DETALLES </a> </button>
+        </article>
 
-    <article>
-        <h3> CRUCERO {{ cruise.number }} </h3>
-        <p> {{ cruise.preview }} </p>
-        <p> Estado: {{ cruise.availability }} </p>
-        <p> Precio: {{ cruise.price }} </p> <br>
-        <button> <a href="{% url 'cruise:cruise_detail' cruise.pk %}"> VER DETALLES </a> </button>
-    </article>
+    {% endfor %}
 
-{% endfor %}
+</section>

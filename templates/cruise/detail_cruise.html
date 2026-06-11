@@ -6,8 +6,19 @@
     <h3> CRUCERO {{ cruise.number }} - DESCRIPCION </h3>
     <p> {{ cruise.description }} </p>
     <p> Nro. de Habitaciones: {{ cruise.rooms }} </p>
+
+    {% for room in rooms %}
+
+        <article>
+            <h3> {{ room.number }} </h3>
+            <p> {{ room.availability }} </p>
+            <button> <a href="{% url 'room:room_detail' room.pk %}"> VER MAS </a> </button>
+        </article>
+
+    {% endfor %}
+
     <p> Estado del Crucero {{ cruise.availability }} </p>
     <p> Precio: {{ cruise.price }} </p>
-    <button> <a href="{% url 'cruise:modify_cruise' cruise.pk %}"> MODIFICAR CRUCERO </a> </button> <br> 
+    <button> <a href="{% url 'cruise:modify_cruise' cruise.pk %}"> MODIFICAR CRUCERO </a> </button> 
     <button> <a href="{% url 'cruise:delete_cruise' cruise.pk %}"> ELIMINAR CRUCERO </a> </button>
 </section>

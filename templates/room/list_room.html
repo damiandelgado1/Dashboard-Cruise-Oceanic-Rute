@@ -1,15 +1,15 @@
-<h2> HABITACIONES DISPONIBLES </h2>
+<section>
 
-<a href="{% url 'room:create_room' %}"> CREAR HABITACION </a>
+    {% for room in rooms %}
 
-{% for room in rooms %}
+        <article>
+            <h3> HABITACION {{ room.number }} </h3>
+            <p> {{ room.preview }} </p>
+            <p> Estado: {{ room.availability }} </p>
+            <p> Precio: {{ room.price }} </h3>
+            <button> <a href="{% url 'room:room_detail' room.pk %}"> VER DETALLES </a> </button>
+        </article>
 
-    <article>
-        <h3> HABITACION {{ room.number }} </h3>
-        <p> {{ room.preview }} </p>
-        <p> Estado: {{ room.availability }} </p>
-        <p> Precio: {{ room.price }} </h3>
-        <button> <a href="{% url 'room:room_detail' room.pk %}"> VER DETALLES </a> </button>
-    </article>
+    {% endfor %}
 
-{% endfor %}
+</section>

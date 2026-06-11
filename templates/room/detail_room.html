@@ -11,6 +11,6 @@
     <p> Comedor: {{ room.dining_room }} </p>
     <p> Estado de la Habitacion: {{ room.availability }} </p>
     <p> Precio: {{ room.price }} </p>
-    <button> <a href="{% url 'room:modify_room' room.pk %}"> MODIFICAR HABITACION </a> </button> <br>
+    <button> <a href="{% url 'room:modify_room' room.pk %}"> MODIFICAR HABITACION </a> </button>
     <button> <a href="{% url 'room:delete_room' room.pk %}"> ELIMINAR HABITACION </a> </button>
 </article>

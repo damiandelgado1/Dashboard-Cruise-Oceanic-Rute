@@ -2,6 +2,18 @@
 
 <form method="POST">
     {% csrf_token %}
-    {{ form.as_p }}
+
+    <div>
+        <label for="{{ form.availability.id_for_label }}"> DISPONIBILIDAD </label> <br>
+        {{ form.availability }}
+    </div>
+    <br>
+
+    <div>
+        <label for="{{ form.price.id_for_label }}"> PRECIO DEL CRUCERO </label> <br>
+        {{ form.price }}
+    </div>
+    <br>
+
     <button type="submit"> MODIFICAR HABITACION </button>
 </form>
