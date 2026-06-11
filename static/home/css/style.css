@@ -35,56 +35,98 @@ cruise/list_cruise.html
 ================================================== */
 
 .list-cruise {
-background-color: #003CC4;
-color: white;
-font-size: 40px;
-position: relative;
-margin: 40px 0px 0px 0px;
-padding: 5px;
-left: 380px;
-text-align: center;
-width: 900px;
+    background-color: #003CC4;
+    color: white;
+    font-size: 40px;
+    position: relative;
+    margin: 40px 0px 0px 0px;
+    padding: 5px;
+    left: 380px;
+    text-align: center;
+    width: 900px;
 }
 
 .cruises {
-display: flex;
-flex-wrap: wrap;
-margin-left: 370px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 370px;
 }
 
 .cruise {
-border: 2px solid #282828;
-border-radius: 10px;
-font-size: 25px;
-margin: 10px;
-padding: 10px;
-width: 420px;
+    border: 2px solid #282828;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    width: 420px;
 }
 
 .number-cruise {
-text-align: center;
+    text-align: center;
 }
 
 .cruise:hover {
-border: 2px solid #003CC4;
+    border: 2px solid #003CC4;
 }
 
 .cruise button {
-position: relative;
-left: 150px;
+    position: relative;
+    left: 150px;
 }
 
 .detail-cruise {
-background-color: #003CC4;
-border-radius: 4px;
-border: none;
-padding: 8px;
-margin: 10px;
+    background-color: #003CC4;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    margin: 10px;
 }
 
 .detail-cruise a {
-color: white;
-font-family: Barlow Condensed;
-font-size: 16px;
-text-decoration: none;
+    color: white;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* ==================================================
+cruise/detail_cruise.html
+================================================== */
+
+.description-cruise {
+    font-size: 25px;
+    margin-left: 500px;
+    width: 700px;
+    text-align: left;
+}
+
+.room-cruise {
+    margin: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cruise-detail {
+    font-size: 18px;
+    text-align: center;
+}
+
+.manage-cruise {
+    background-color: #003CC4;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    left: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px;
+    width: 170px;
+}
+
+.manage-cruise a {
+    color: white;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    text-decoration: none;
 }
