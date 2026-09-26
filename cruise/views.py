@@ -23,6 +23,7 @@ class CreateCruise(CreateView):
     model = Cruise
     fields = [
         "number",
+        "preview",
         "description",
         "rooms",
         "availability",
