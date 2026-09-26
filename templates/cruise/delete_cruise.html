@@ -6,7 +6,7 @@
 
 <h3 class="delete-cruise"> ELIMINAR CRUCERO {{ cruise.number }} </h3>
 
-<form method="POST" action="">
+<form method="POST" action="" class="delete-cruise">
     {% csrf_token %}
     {{ form }}
     <button type="submit" class="cruise-delete"> ELIMINAR CRUCERO </button>

@@ -1,5 +1,5 @@
 // Query Cruise and Room
-let rooms = document.getElementsByClassName("cruises-room");
+let rooms = document.getElementsByClassName("room-list");
 let cruises = document.getElementsByClassName("cruise-list");
 
 // Listen the clic of the Properly

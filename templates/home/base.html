@@ -18,15 +18,15 @@
     <nav>
         <a href="{% url 'room:create_room' %}" class="create"> CREAR HABITACION </a>
         <a href="{% url 'cruise:create_cruise' %}" class="create"> CREAR CRUCERO </a>
-        <a href="{% url 'cruise:cruise_list' %}" class="dashboard-link" data-target="cruises"> CRUCEROS </a>
-        <a href="{% url 'room:room_list' %}" class="dashboard-link" data-target="rooms"> HABITACIONES </a>
+        <a href="{% url 'cruise:cruise_list' %}" class="dashboard-link" id="cruises-link" data-target="cruises"> CRUCEROS </a>
+        <a href="{% url 'room:room_list' %}" class="dashboard-link" id="rooms-link" data-target="rooms"> HABITACIONES </a>
     </nav>
 
-    <section id="cruises" class="dashboard-section">
+    <section id="cruises" class="dashboard-section" class="cruise-list">
         {% include 'cruise/list_cruise.html' %}
     </section>
 
-    <section id="rooms" class="dashboard-section" style="display: none;">
+    <section id="rooms" class="dashboard-section" style="display: none;" class="room-list">
         {% include 'room/list_room.html' %}
     </section>
 

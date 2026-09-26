@@ -5,16 +5,18 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-<section>
+<h3 class="list-room"> HABITACIONES DISPONIBLES </h3>
+
+<section class="rooms">
 
     {% for room in rooms %}
 
-        <article>
-            <h3> HABITACION {{ room.number }} </h3>
+        <article class="room">
+            <h3 class="number-room"> HABITACION {{ room.number }} </h3>
             <p> {{ room.preview }} </p>
             <p> Estado: {{ room.availability }} </p>
-            <p> Precio: {{ room.price }} </h3>
-            <button> <a href="{% url 'room:room_detail' room.pk %}"> VER DETALLES </a> </button>
+            <p> Precio: {{ room.price }} </p> <br>
+            <button class="detail-room"> <a href="{% url 'room:room_detail' room.pk %}"> VER DETALLES </a> </button>
         </article>
 
     {% endfor %}

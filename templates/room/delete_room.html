@@ -7,8 +7,8 @@
 
 <h3> ELIMINAR HABITACION {{ room.number }} </h3>
 
-<form method="POST">
+<form method="POST" class="delete-room">
     {% csrf_token %}
     {{ form }}
-    <button type="submit"> ELIMINAR HABITACION </button>
+    <button type="submit" class=""> ELIMINAR HABITACION </button>
 </form>
