@@ -324,3 +324,75 @@ room/detail_room.html
     color: white;
     text-decoration: none;
 }
+
+/* ==================================================
+room/create_room.html
+================================================== */
+
+.create-room {
+    font-size: 30px;
+    text-align: center;
+}
+
+.room-create {
+    margin-left: 540px;
+}
+
+.new-room {
+    background-color: #003CC4;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+/* ==================================================
+room/modify_room.html
+================================================== */
+
+.room-modify {
+    font-size: 30px;
+    text-align: center;
+}
+
+.modify-room {
+    margin-left: 575px;
+}
+
+.update-room {
+    background-color: #003CC4;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 80px;
+    font-family: Barlow Condensed;
+    padding: 10px;
+}
+
+/* ==================================================
+room/delete_room.html
+================================================== */
+
+.room-delete {
+    font-size: 30px;
+    text-align: center;
+}
+
+.delete-room {
+    margin-left: 545px;
+}
+
+.delete {
+    background-color: #003CC4;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    margin-left: 120px;
+    padding: 10px;
+}
