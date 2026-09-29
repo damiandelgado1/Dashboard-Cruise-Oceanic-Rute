@@ -8,6 +8,8 @@ body {
 
 .name-cruise {
     font-family: Barlow Condensed;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 .return {
@@ -61,17 +63,17 @@ cruise/list_cruise.html
     font-size: 40px;
     padding: 5px;
     position: relative;
-    left: 380px;
+    left: 350px;
     text-align: center;
-    width: 900px;
+    width: 1100px;
 }
 
 .cruises {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-left: 385px;
+    gap: 20px;
+    margin-left: 355px;
     margin-top: 20px;
 }
 
@@ -80,7 +82,7 @@ cruise/list_cruise.html
     border-radius: 10px;
     font-size: 25px;
     padding: 10px;
-    width: 420px;
+    width: 330px;
 }
 
 .number-cruise {
@@ -93,7 +95,7 @@ cruise/list_cruise.html
 
 .cruise > .detail-cruise {
     position: relative;
-    left: 150px;
+    left: 110px;
 }
 
 .detail-cruise {
@@ -231,8 +233,8 @@ room/list_room.html
     font-size: 40px;
     padding: 5px;
     position: relative;
-    left: 380px;
-    width: 900px;
+    left: 350px;
+    width: 1100px;
     text-align: center;
 }
 
@@ -240,8 +242,8 @@ room/list_room.html
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-left: 385px;
+    gap: 20px;
+    margin-left: 355px;
     margin-top: 20px;
 }
 
@@ -250,7 +252,7 @@ room/list_room.html
     border-radius: 10px;
     font-size: 25px;
     padding: 10px;
-    width: 420px;
+    width: 330px;
 }
 
 .room:hover {
@@ -263,7 +265,7 @@ room/list_room.html
 
 .room > .detail-room {
     position: relative;
-    left: 150px;
+    left: 120px;
 }
 
 .detail-room {
@@ -278,5 +280,47 @@ room/list_room.html
     color: white;
     font-family: Barlow Condensed;
     font-size: 20px;
+    text-decoration: none;
+}
+
+/* ==================================================
+room/detail_room.html
+================================================== */
+
+.room-number {
+    font-size: 30px;
+    margin-left: 500px;
+}
+
+.description-room {
+    font-size: 20px;
+    margin-left: 500px;
+}
+
+.room-detail {
+    font-size: 20px;
+    text-align: center;
+}
+
+.cruise-room {
+    font-size: 20px;
+    margin-left: 500px;
+}
+
+.manage-room {
+    background-color: #003CC4;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    left: 545px;
+}
+
+.manage-room a {
+    color: white;
     text-decoration: none;
 }

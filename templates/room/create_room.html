@@ -5,9 +5,9 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-<h3> CREAR HABITACION PARA ARRIENDO </h3>
+<h3 class="create-room"> CREAR HABITACION PARA ARRIENDO </h3>
 
-<form method="POST" class="create-room">
+<form method="POST" class="room-create">
     {% csrf_token %}
 
     <div>
@@ -58,5 +58,5 @@
     </div>
     <br>
 
-    <button type="submit" class="room-create"> CREAR HABITACION </button>
+    <button type="submit" class="new-room"> CREAR HABITACION </button>
 </form>

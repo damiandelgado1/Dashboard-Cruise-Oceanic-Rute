@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-<h3> MODIFICAR HABITACION {{ room.number }} </h3>
+<h3 class="room-modify"> MODIFICAR HABITACION {{ room.number }} </h3>
 
 <form method="POST" class="modify-room">
     {% csrf_token %}
@@ -22,5 +22,5 @@
     </div>
     <br>
 
-    <button type="submit" class="room-modify"> MODIFICAR HABITACION </button>
+    <button type="submit" class="update-room"> MODIFICAR HABITACION </button>
 </form>
